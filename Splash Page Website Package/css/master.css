@@ -1,0 +1,65 @@
+body{
+	font-family: 'Montserrat';
+	height: 100%;
+}
+
+.bg-green{
+	background-color: #259f42;	
+}
+
+.bg-dark-green{
+	background-color: #00703c;
+	padding-left: 75px;
+	padding-right: 10px;
+}
+
+.btn-bg-yellow{
+    background-color: #fec43d;
+    position: absolute;
+    transform: translateX(120%) translateY(-50%);
+}
+
+.arrow{
+	height: 50px;	
+}
+
+.image-box{
+	position: relative;
+	float: left;
+}
+
+.image-box .hover-img{
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: none;
+}
+
+.image-box:hover .hover-img{
+	display: block;
+	
+}
+
+.lansdowne-img{
+	height: 110px;
+}
+
+.lansdowne-img-foundation{
+	height: 105px;
+}
+
+.div-spacing{
+	padding-top: 35px;
+	padding-left: 75px;
+	padding-right: 75px;
+}
+
+.bg-footer{
+	background-color: #282829;
+}
+
+@media (max-width: 767.98px){
+	.product{
+		visibility: hidden;
+	}
+}

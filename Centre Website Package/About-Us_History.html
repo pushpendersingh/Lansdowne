@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/master.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <title>About Us- Lansdowne Centre History</title>
+</head>
+
+<body>
+
+  <!--Search Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content rounded-0 border-2">
+        <div class="modal-body">
+          <form class="row  g-3 align-items-center">
+            <div class="col">
+              <label class="visually-hidden" for="exampleDataList">Search</label>
+              <div class="input-group input-group-lg">
+                <span class="input-group-text" id="basic-addon1"><svg id="i-search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20" height="20" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="2">
+                    <circle cx="14" cy="14" r="12" />
+                    <path d="M23 23 L30 30" />
+                  </svg></span>
+                <input type="text" class="form-control border-end-0 border-start-0" list="datalistOptions" id="exampleDataList" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1">
+                <button class="btn btn-outline-secondary border-start-0 min-w-auto" type="button" id="button-addon2"><svg id="i-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20" height="20" fill="none" stroke="currentcolor"
+                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                    <path d="M2 30 L30 2 M30 30 L2 2" />
+                  </svg></button>
+                <datalist id="datalistOptions">
+                  <option value="San Francisco">
+                  <option value="New York">
+                  <option value="Seattle">
+                  <option value="Los Angeles">
+                  <option value="Chicago">
+                </datalist>
+              </div>
+
+            </div>
+
+            <div class=" w-auto">
+              <button type="submit" class="btn btn-lg btn-success font-bold">Search</button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Top Nav -->
+  <div class="container-fluid bg-green align-items-center">
+    <div class="d-flex justify-content-between">
+      <div class="btn-group" role="group" aria-label="Basic outlined example">
+        <button type="button" class="btn btn-active">Centre</button>
+        <button type="button" class="btn btn-dark-green">Foundation <img src="img\Navigation and Footer\external-link-icon.png" alt=""> </button>
+      </div>
+      <div class="d-flex align-items-center">
+        <ul class="nav justify-content-center font-size me-5 d-none d-lg-flex">
+          <li class="nav-item">
+            <a class="nav-link" href="#">-</a>
+          </li>
+          <li class="nav-item">
+            <div class="nav-link">
+              A
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">+</a>
+          </li>
+        </ul>
+
+        <ul class="nav justify-content-center tel">
+          <li class="nav-item">
+            <a class="nav-link font-medium" href="tel:5197533153">519-753-3153</a>
+          </li>
+        </ul>
+        <ul class="nav social justify-content-center  d-none d-lg-flex">
+          <li class="nav-item">
+            <a class="nav-link fb" href="https://www.facebook.com/Lansdowne-Childrens-Centre-127644350608842/" title="Lansdowne - Facebook" target="_blank"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link tw" href="https://twitter.com/LansdowneBrant" title="Lansdowne - Twitter" target="_blank"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ig" href="https://www.instagram.com/lansdownechildrens/?hl=en" title="Lansdowne - Instagram" target="_blank"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link li" href="https://www.instagram.com/lansdownechildrens/?hl=en" title="Lansdowne - Linkedin" target="_blank"></a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!--Main Nav -->
+  <nav class="navbar navbar-expand-lg navbar-light" role="navigation">
+    <button class="navbar-toggler order-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span>MENU</span>
+    </button>
+    <a class="navbar-brand me-0 me-lg-5 d-flex d-lg-none order-3" href="#"> <img src="img\Navigation and Footer\centre-logo.jpg" alt=""> </a>
+    <div class="container-fluid align-items-stretch justify-content-center">
+      <a class="navbar-brand me-0 me-lg-5 d-none d-lg-flex" href="#"> <img src="img\Navigation and Footer\centre-logo.jpg" alt=""> </a>
+      <ul class="nav nav-fill w-100 main-menu d-none d-lg-flex">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="donate.html">DONATE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="capital-campaign.html">CAPITAL CAMPAIGN</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="my-account.html">MY ACCOUNT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><img class="search-img" src="img\Navigation and Footer\search-icon.png" alt="Search"> </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="container-fluid order-2">
+      <div class="collapse navbar-collapse border-top border-2" id="navbarSupportedContent">
+        <ul class="nav nav-fill w-100 main-menu d-flex flex-column d-lg-none">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="donate.html">DONATE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="capital-campaign.html">CAPITAL CAMPAIGN</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="my-account.html">MY ACCOUNT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><span class="d-flex d-lg-none pe-2">SEARCH</span> <img class="search-img" src="img\Navigation and Footer\search-icon.png" alt="Search"> </a>
+          </li>
+        </ul>
+        <ul class="navbar-nav mb-2 mb-lg-0 w-100 nav-fill">
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="position-relative">About Us</span>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item border-0" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item border-0" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Start Service</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Fee for Service</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Our Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Careers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Volunteers/Students</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Family Resources</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Events & News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- banner -->
+  <div class="position-relative">
+    <img class="w-100 d-none d-md-block" src="img\Page Header Backgrounds\LCC_Centre_Page-Titles.jpg" alt="">
+    <img class="w-100 d-block d-md-none" src="img\Page Header Backgrounds\LCC_Centre_Page-Titles_Mobile.jpg" alt="">
+    <div class="position-absolute align-center">
+      <div class="container-fluid">
+        <div class="py-5">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">LANSDOWNE CHILDREN’S CENTRE</a></li>
+              <li class="breadcrumb-item"><a href="#">ABOUT US</a></li>
+              <li class="breadcrumb-item active" aria-current="page">LANSDOWNE CENTRE HISTORY</li>
+            </ol>
+          </nav>
+          <h1 class="mb-0">Lansdowne Centre History</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- section -->
+  <div class="container-fluid mb-4 mb-lg-5">
+    <div class="row justify-content-between">
+      <div class="col-lg-6 mt-4 mt-lg-5">
+        <p>Lansdowne Children's Centre was incorporated as a treatment centre in 1974;
+          the history that preceded this incorporation is extensive. Following are some
+          highlights of this history.</p>
+        <div class="d-flex">
+          <div class="h3 d-none d-md-flex font-bold text-dark-green">
+            1952
+          </div>
+          <div class="line">
+            <div class="line-circle">
+
+            </div>
+          </div>
+          <div class="">
+            <div class="h3 d-flex d-md-none font-bold text-dark-green">
+              1952
+            </div>
+            <p>A group of children with cerebral palsy, representing seven
+              families, met on a part-time basis in the Red Cross Rooms
+              on William Street. Parents Council for Cerebral Palsy was
+              formed.</p>
+          </div>
+        </div>
+        <div class="d-flex">
+          <div class="h3 d-none d-md-flex font-bold text-dark-green">
+            1952
+          </div>
+          <div class="line">
+            <div class="line-circle">
+
+            </div>
+          </div>
+          <div class="">
+            <div class="h3 d-flex d-md-none font-bold text-dark-green">
+              1952
+            </div>
+            <p>A group of children with cerebral palsy, representing seven
+              families, met on a part-time basis in the Red Cross Rooms
+              on William Street. Parents Council for Cerebral Palsy was
+              formed.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-lg-5 mt-4 mt-lg-5 d-none d-lg-block">
+        <div class="h5 font-bold">
+          Lansdowne Children’s Centre
+        </div>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <div class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                About Us
+              </button>
+            </div>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
+                butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Accordion Item #2
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
+                butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Accordion Item #3
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
+                butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Divider -->
+  <img class="w-100 d-block" src="img\Navigation and Footer\footer-divider-line.jpg" alt="">
+
+  <!-- Footer -->
+  <footer class="bg-footer">
+    <div class="container-fluid">
+      <div class="row text-white gx-0 gx-lg-5 text-center-mobile mb-4">
+        <div class="col-lg-3 pt-4 pt-lg-5 text-white">
+          <div class="h3 font-bold mb-4">
+            Lansdowne Children’s Centre
+          </div>
+          <ul class="nav social justify-content-center justify-content-lg-start">
+            <li class="nav-item">
+              <a class="nav-link fb" href="https://www.facebook.com/Lansdowne-Childrens-Centre-127644350608842/" title="Lansdowne - Facebook" target="_blank"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link tw" href="https://twitter.com/LansdowneBrant" title="Lansdowne - Twitter" target="_blank"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ig" href="https://www.instagram.com/lansdownechildrens/?hl=en" title="Lansdowne - Instagram" target="_blank"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link li" href="https://www.instagram.com/lansdownechildrens/?hl=en" title="Lansdowne - Linkedin" target="_blank"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 pt-4 pt-lg-5">
+          <div class="h5 font-bold mb-3">
+            Site Links
+          </div>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Donate</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Capital Campaign</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">My Account – Client Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Member Portal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sitemap</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 pt-4 pt-lg-5">
+          <div class="h5 font-bold mb-3">
+            Visit
+          </div>
+          <ul class="nav flex-column loc">
+            <li class="nav-item">
+              <a class="nav-link" href="#">39 Mount Pleasant Street,<br>
+                Brantford, ON N3T 1S7</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">12 Colborne St. N.,<br>
+                Simcoe, ON N3Y 3T9</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">11 Colborne Street North,<br>
+                Simcoe, ON N3Y 4H2;</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">82 Argyle Street South, Unit 3,<br>
+                Caledonia, ON N3W 1K7</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pb-0" href="#">10 Ramsey Drive,<br>
+                Dunnville, ON N1A 1K8</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 pt-4 pt-lg-5">
+          <div class="h5 font-bold mb-3">
+            Contact
+          </div>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" href="tel:5197533153">Tel: 519-753-3153</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tel:5197533153">Fax: 519-753-3153</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tel:18004547186">Toll Free: 1-800-454-7186</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mailto:info@lansdownecc.com">Email: info@lansdownecc.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="bg-dark-green">
+      <div class="container-fluid">
+        <div class="py-2 text-center text-white copyright">
+          © 2021 Lansdowne Children’s Centre. All Rights Reserved. | Website Developed by TDG Marketing Inc.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+
+</html>
