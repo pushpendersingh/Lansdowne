@@ -877,4 +877,12 @@ hr:not([size]) {
   }
 }
 
+
+.bg-error-img{
+  background-size: cover;
+  background-image: url("../img/13. 404 Error/404-background-image_desktop.jpg");
+}
+
+
+
 @media (max-width: 575.98px) {}
