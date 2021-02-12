@@ -691,6 +691,15 @@ hr:not([size]) {
     border-top-right-radius: calc(.5rem - 1px);
 }
 
+.bg-error-img{
+  background-size: cover;
+  background-image: url("../img/13. 404 Error/404-background-image_desktop.jpg");
+}
+
+.square-bullets{
+  list-style-type: square; 
+  line-height: 2rem; 
+}
 
 @media (max-width: 1199.98px) {
   .visit-circle {
@@ -874,26 +883,14 @@ hr:not([size]) {
   .btn-group-lg>.btn, .btn-lg {
     padding: .35rem 1rem;
     font-size: 1rem;
-  }
+  }  
+}
 
+
+@media (max-width: 575.98px) {
   .bg-error-img{
     background-size: cover;
   background-image: url("../img/13. 404 Error/404-background-image_mobile.jpg");
   }
-}
-
-
-.bg-error-img{
-  background-size: cover;
-  background-image: url("../img/13. 404 Error/404-background-image_desktop.jpg");
-}
-
-.square-bullets{
-  list-style-type: square; 
-  line-height: 2rem;
-}
-
-@media (max-width: 575.98px) {
-  
 }
 

@@ -1,0 +1,73 @@
+@font-face {
+  font-family: MontReg;
+  src: url("../fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: MontBold;
+  src: url("../fonts/Montserrat-Bold.ttf");
+}
+
+@font-face {
+  font-family: MontSemiBold;
+  src: url("../fonts/Montserrat-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: MontMedium;
+  src: url("../fonts/Montserrat-Medium.ttf");
+}
+
+@font-face {
+  font-family: MontLight;
+  src: url("../fonts/Montserrat-Light.ttf");
+}
+
+body {
+  color: #323132;
+  font-family: "MontReg"
+}
+
+h1{
+  font-family: "MontBold";
+  
+}
+
+a {
+  color: #00703c;
+  text-decoration: none;
+  font-family: 'MontBold';
+}
+
+.bg-dark-green{
+	background-color: #00703c;
+}
+
+.text-dark-green{
+	color: #00703c;
+	font-family: "MontMedium";
+}
+
+.btn-bg{
+	background-color: white;
+}
+
+.btn-bg-yellow{
+	background-color: #fec43d;
+}
+
+.img-icon{
+	height: 1.3rem;
+}
+
+.font-size{
+	font-size: 0.90rem;
+}
+
+.font-semi-bold {
+  font-family: "MontSemiBold";
+}
+
+.font-bold {
+  font-family: "MontBold";
+}
