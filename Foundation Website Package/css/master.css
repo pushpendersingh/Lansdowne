@@ -67,7 +67,7 @@ a {
 }
 
 body {
-  color: #323132;
+  color: #282829;
   font-family: "MontReg"
 }
 
@@ -84,7 +84,7 @@ body {
 }
 
 .btn {
-  color: #323132;
+  color: #282829;
   font-size: 1rem;
   border-radius: 0;
   min-width: 8rem;
@@ -105,7 +105,7 @@ body {
   height: 3.5rem;
 }
 
-.btn-dark-green img {
+.ext-img{
   width: 1.5rem;
   padding-left: .1rem;
   padding-bottom: .3rem;
@@ -126,19 +126,35 @@ body {
 }
 
 .social .nav-link.fb {
-  background-image: url("../img/Navigation and Footer/header-sm-fb_idle.png");
+  background-image: url("../img/1- Global Elements/header-sm-fb_idle.png");
 }
 
 .social .nav-link.ig {
-  background-image: url("../img/Navigation and Footer/header-sm-ig_idle.png");
+  background-image: url("../img/1- Global Elements/header-sm-ig_idle.png");
 }
 
 .social .nav-link.li {
-  background-image: url("../img/Navigation and Footer/header-sm-li_idle.png");
+  background-image: url("../img/1- Global Elements/header-sm-li_idle.png");
 }
 
 .social .nav-link.tw {
-  background-image: url("../img/Navigation and Footer/header-sm-tw_idle.png");
+  background-image: url("../img/1- Global Elements/header-sm-tw_idle.png");
+}
+
+.social .nav-link.fb:hover, .social .nav-link.fb:focus {
+  background-image: url("../img/1- Global Elements/header-sm-fb_hover.png");
+}
+
+.social .nav-link.ig:hover,.social .nav-link.ig:focus  {
+  background-image: url("../img/1- Global Elements/header-sm-ig_hover.png");
+}
+
+.social .nav-link.li:hover,.social .nav-link.li:focus {
+  background-image: url("../img/1- Global Elements/header-sm-li_hover.png");
+}
+
+.social .nav-link.tw:hover,.social .nav-link.tw:focus {
+  background-image: url("../img/1- Global Elements/header-sm-tw_hover.png");
 }
 
 .font-size .nav-link {
@@ -156,68 +172,62 @@ body {
   font-size: 1.25rem;
   color: white;
 }
-
-.navbar-brand {
-  padding: .5rem 0 1rem;
-}
-
-.navbar-brand img {
-  width: 16rem;
-}
-
 .navbar {
-  padding-top: 0;
-  flex-direction: column;
-  padding-bottom: 0;
-}
-
-.search-img {
-  width: 1.75rem;
-}
-
-.main-menu .nav-link {
-  color: #323132;
-  font-family: 'MontBold';
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  border-bottom: .5rem solid transparent;
-}
-
-.main-menu .nav-link:hover, .main-menu .nav-link:focus {
-  border-bottom: .5rem solid #39ba9c;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: #323132;
-  padding: 1rem .5rem;
-  font-family: 'MontSemiBold';
-  font-size: 0.9rem;
+    color: #fff;
+    text-transform: uppercase;
+    padding: .75rem;
+    font-family: 'MontSemiBold';
+    font-size: 1rem;
+    position: relative;
 }
 
 .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
-  color: #00703c;
+  color: #fff;
 }
 
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-  color: #00703c;
+  color: #fff;
 }
 
-.carousel-control-prev-icon, .carousel-control-next-icon {
-  background-image: none;
+.dropdown-menu {
+  width: 25rem;
+  padding: .25rem 1rem;
+  margin: 0;
+  font-size: 1rem;
+  color: #323132;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  border-radius: 0;
+  border: 1px solid #c8c8c8;
 }
 
-.carousel-control-next-icon, .carousel-control-prev-icon {
-  width: 1.5rem;
-  height: 2rem;
+.dropdown-item {
+    display: block;
+    padding: .4rem 0;
+    border-bottom: .1rem solid #bdbdbd;
+    font-family: 'MontMedium';
+    color: #282829;
+    background-color: transparent;
 }
 
-.carousel-control-next, .carousel-control-prev {
-  width: 9%;
-  opacity: 1;
+.dropdown-item:focus, .dropdown-item:hover {
+  color: #282829;
+  background-color: transparent;
 }
+
+.dropdown li {
+  padding: 0 1rem;
+}
+.dropdown-menu.show li:last-child .dropdown-item {
+  border: 0 ;
+}
+
 
 .btn-warning {
   color: #323132;
@@ -241,50 +251,6 @@ body {
   width: 7rem;
 }
 
-.needs-circle {
-  width: 18rem;
-  height: 18rem;
-  border-radius: 50%;
-  background-color: #eb822b;
-  text-align: center;
-  padding: .5rem;
-  font-family: "MontMedium";
-  border: 5px solid #fff;
-}
-
-.dotted-border {
-  border: 6px solid #eb822b;
-  border-style: dotted;
-  border-radius: 50%;
-}
-
-.visit-circle {
-  width: 15rem;
-  height: 15rem;
-  border-radius: 50%;
-  border: 4px solid #259f42;
-  text-align: center;
-  color: #259f42;
-  padding: 1rem;
-  font-family: "MontMedium";
-  margin-top: -8rem;
-}
-
-.visit-circle .h1 {
-  font-size: 3.5rem;
-}
-
-.ref-circle {
-  width: 12rem;
-  height: 12rem;
-  border-radius: 50%;
-  background-color: #39ba9c;
-  text-align: center;
-  padding: .5rem;
-  margin: 2rem;
-  margin-left: -2rem;
-  font-family: "MontMedium";
-}
 
 .bg-feature {
   background-image: url("../img/01. Home/featured-story.jpg");
@@ -359,57 +325,6 @@ footer .loc .nav-link {
   background-color: #fec43d;
 }
 
-.dropdown-menu {
-  min-width: 10rem;
-  padding: .25rem 1rem;
-  margin: 0;
-  font-size: 1rem;
-  color: #323132;
-  font-family: 'MontReg';
-  text-align: left;
-  list-style: none;
-  background-color: #fff;
-  background-clip: padding-box;
-  border-radius: 0;
-  border: .1rem solid #c8c8c8;
-}
-
-.dropdown-item {
-  display: block;
-  padding: .4rem 0;
-  border-bottom: .1rem solid #c6c6c6;
-  /* font-weight: 300; */
-  font-family: 'MontMedium';
-  color: #323132;
-  background-color: transparent;
-  /* border: 0; */
-}
-
-.dropdown-item:focus, .dropdown-item:hover {
-  color: #00703c;
-  background-color: transparent;
-}
-
-.dropdown li {
-  padding: 0 1rem;
-}
-
-.dropdown-menu.show {
-  display: flex;
-  flex-direction: column;
-  height: 12.7rem;
-  flex-wrap: wrap;
-  right: 0;
-}
-
-.navbar-expand-lg .navbar-nav {
-  position: relative;
-}
-
-.dropdown, .dropend, .dropstart, .dropup {
-  position: unset;
-}
-
 .copyright {
   font-size: .75rem;
 }
@@ -451,11 +366,10 @@ footer .loc .nav-link {
 
 .navbar-light .navbar-toggler {
   width: 100%;
-  color: #323132;
+  color: #fff;
   border: 0;
   border-radius: 0;
   font-family: 'MontMedium';
-  color: #00703c;
   border-bottom: .1rem solid #c3c3c3;
   padding: .75rem;
 }
@@ -689,6 +603,19 @@ hr:not([size]) {
 .card-img, .card-img-top {
     border-top-left-radius: calc(.5rem - 1px);
     border-top-right-radius: calc(.5rem - 1px);
+}
+.dropdown .nav-link::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f0dd";
+    position: absolute;
+    top: .5rem;
+    right:0rem;
+}
+
+.dropdown .nav-link[aria-expanded="true"]:after {
+    content: "\f0de";
+    top: 1rem;
 }
 
 
