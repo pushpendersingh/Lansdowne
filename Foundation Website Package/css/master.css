@@ -379,15 +379,21 @@ footer .social .nav-link.tw:hover, footer .social .nav-link.tw:focus {
   background-color: #fec43d;
 }
 
-.bg-light-green{
+.bg-light-green {
   background-color: #d7f1eb;
 }
-.text-green{
-  color:#259f42;
+
+.text-green {
+  color: #259f42;
 }
 
-.copyright {
-  font-size: .75rem;
+.bg-campaign {
+  background: url("../img/Home/capital-campaign.jpg"), #000;
+  background-size: cover;
+}
+
+.green-overlay {
+  background-color: rgb(0 81 43 / 83%);
 }
 
 .min-w-auto {
