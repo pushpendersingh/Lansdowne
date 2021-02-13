@@ -1000,6 +1000,9 @@ hr:not([size]) {
     color: white;
     padding: .25rem;
   }
+  .w-mobile-100{
+    width:100%;
+  }
 
   .navbar-collapse.show {
     top: 5.6rem;
