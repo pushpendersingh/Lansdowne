@@ -542,20 +542,33 @@ footer .social .nav-link.tw:hover, footer .social .nav-link.tw:focus {
 
 .form-label {
   margin-bottom: .5rem;
-  font-family: 'MontBold';
+  font-family: 'MontSemiBold';
   text-transform: uppercase;
 }
 
+.form-control {
+    color: #282829;
+    border: 1px solid #b7b7b7;
+    border-radius: .5rem;
+}
+
 .form-select {
-  padding: .5rem 1.75rem .5rem .75rem;
-  color: #323132;
+  color: #282829;
   background-image: url("data:image/svg+xml,%3Csvg aria-hidden='true' focusable='false' data-prefix='fas' data-icon='sort-down' class='svg-inline--fa fa-sort-down fa-w-10' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'%3E%3Cpath fill='gray' d='M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41z'%3E%3C/path%3E%3C/svg%3E");
   background-repeat: no-repeat;
-  background-position: right .75rem center;
-  background-size: 14px 20px;
-  border: 1px solid #323132;
-  font-family: 'MontMedium';
-  border-radius: 0;
+      background-position: right .75rem center;
+      background-size: 14px 20px;
+      border: 1px solid #a9a9a9;
+      font-family: 'MontMedium';
+      border-radius: .5rem;
+}
+.form-control:focus ,.form-select:focus{
+    color: #282829;
+    background-color: #fff;
+    border-color: #00703c;
+    outline: 0;
+    border: 2px solid #00703c;
+    box-shadow: none;
 }
 
 hr:not([size]) {
@@ -745,6 +758,15 @@ hr:not([size]) {
   padding: 0;
   font-family: 'MontReg';
   color: #282829;
+}
+
+.form-border {
+  border-top: 8px solid #00703c;
+  border-bottom: 8px solid #00703c;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 0px 23px -10px rgb(0 0 0 / 75%);
+  -moz-box-shadow: 0px 0px 23px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 23px -10px rgb(0 0 0 / 75%);
 }
 
 @media (max-width: 1199.98px) {
