@@ -32,10 +32,6 @@ p {
   margin-bottom: 1.5rem;
 }
 
-ol, ul {
-  padding-left: 1rem;
-}
-
 a:hover {
   color: #00703c;
 }
@@ -73,6 +69,11 @@ body {
 
 .container-fluid {
   padding: 0 3rem;
+}
+
+.container-full {
+  padding-right: var(--bs-gutter-x, -.75rem);
+  padding-left: var(--bs-gutter-x, -.75rem);
 }
 
 .bg-green {
@@ -279,19 +280,31 @@ body {
 }
 
 .donate-now {
-  width: 8rem;
-  height: 8rem;
-  position: absolute;
   bottom: 3rem;
   background-color: #39ba9c;
   color: #282829;
   text-align: center;
-  right: 3rem;
   display: flex;
   align-items: center;
   border-radius: 50%;
   font-size: 1.25rem;
   justify-content: center;
+  width: 7rem;
+  height: 7rem;
+  position: absolute;
+  right: 3rem;
+  line-height: 1.25;
+}
+
+.donate-now:hover {
+  color: #282829;
+}
+
+.align-top {
+  left: 0;
+  right: 0;
+  top: 2rem;
+  position: absolute;
 }
 
 .bg-footer {
@@ -691,6 +704,49 @@ hr:not([size]) {
   top: 1rem;
 }
 
+.banner-image {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.banner {
+  height: 25rem;
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 20%;
+  background: linear-gradient(90deg, #00703c, transparent);
+}
+
+.banner .donate-now {
+  width: 7rem;
+  height: 7rem;
+  position: absolute;
+  bottom: 0;
+  transform: translateY(50%);
+  background-color: #39ba9c;
+  color: #282829;
+  text-align: center;
+  right: 3rem;
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 1.25rem;
+  line-height: 1.25;
+  justify-content: center;
+}
+
+.light-nav .nav-link {
+  padding: 0;
+  font-family: 'MontReg';
+  color: #282829;
+}
+
 @media (max-width: 1199.98px) {
   .visit-circle {
     margin-top: 0;
@@ -712,6 +768,29 @@ hr:not([size]) {
 
   .banner-text {
     font-size: 1rem;
+  }
+
+  .banner .donate-now {
+    width: 5.5rem;
+    height: 5.5rem;
+    position: absolute;
+    bottom: 0;
+    transform: translate(50%, 50%);
+    background-color: #39ba9c;
+    color: #282829;
+    text-align: center;
+    right: 50%;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 1rem;
+    line-height: 1.25;
+    justify-content: center;
+  }
+
+  .banner-overlay {
+    right: 0%;
+    background: linear-gradient(90deg, #00703c, #00703c3d);
   }
 
   .bg-overlay {
@@ -899,6 +978,7 @@ hr:not([size]) {
     color: white;
     padding: .25rem;
   }
+
   .navbar-collapse.show {
     top: 5.6rem;
   }
