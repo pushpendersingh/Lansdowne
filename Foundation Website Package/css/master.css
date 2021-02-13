@@ -393,7 +393,7 @@ footer .social .nav-link.tw:hover, footer .social .nav-link.tw:focus {
 }
 
 .green-overlay {
-  background-color: rgb(0 81 43 / 83%);
+  background-color: rgb(0 112 60 / 86%);
 }
 
 .min-w-auto {
@@ -421,8 +421,12 @@ footer .social .nav-link.tw:hover, footer .social .nav-link.tw:focus {
   border: 0;
   border-radius: 0;
   font-family: 'MontMedium';
-  border-bottom: .1rem solid #c3c3c3;
+  border-bottom: 0;
   padding: .75rem;
+}
+
+.w-lg-50 {
+  width: 50% !important;
 }
 
 .navbar-toggler:focus {
@@ -700,6 +704,42 @@ hr:not([size]) {
     padding-left: var(--bs-gutter-x, .75rem);
   }
 
+  .logo {
+    text-align: center;
+    width: 100%;
+    max-width: 20rem;
+  }
+
+  .banner-text {
+    font-size: 1rem;
+  }
+
+  .bg-overlay {
+    height: 100%;
+    background: #00703c75;
+  }
+
+  footer .nav-link {
+    text-align: center !important;
+  }
+
+  .donate-now {
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+    bottom: 3rem;
+    background-color: #39ba9c;
+    color: #282829;
+    text-align: center;
+    right: 1.5rem;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 1rem;
+    justify-content: center;
+  }
+
   .faq .accordion-button {
     font-size: 1.1rem;
   }
@@ -766,8 +806,9 @@ hr:not([size]) {
     text-align: left;
     font-family: 'MontSemiBold';
     font-size: 1rem;
-    color: #00703c;
+    color: #fff;
     text-transform: uppercase;
+    display: inline-block;
   }
 
   .navbar-toggler span {
@@ -807,16 +848,22 @@ hr:not([size]) {
     flex-direction: column;
     height: auto;
     flex-wrap: nowrap;
-    color: white;
+    color: #282829;
     right: 0;
-    background-color: #00703c;
+    background-color: #fff;
     padding: .25rem;
-    margin: 0 var(--bs-gutter-x, -.75rem);
+    width: 100%;
+  }
+
+  .navbar .container-fluid {
+    padding: 0;
   }
 
   .dropdown-item {
     border-bottom: .1rem solid #c6c6c6 !important;
     color: #fff;
+    width: 100%;
+    color: #282829;
   }
 
   .text-center-mobile {
@@ -828,12 +875,21 @@ hr:not([size]) {
   }
 
   .dropdown-item:focus, .dropdown-item:hover {
-    color: #fff;
+    color: #282829;
     background-color: transparent;
   }
 
-  .search-img {
-    width: 1.5rem;
+  .navbar-collapse.show {
+    position: absolute;
+    top: 6.2rem;
+    background: rgb(0, 112, 60);
+    bottom: 0px;
+    z-index: 111;
+    border-top: .1rem solid #323132;
+  }
+
+  .navbar {
+    position: inherit;
   }
 }
 
@@ -842,6 +898,9 @@ hr:not([size]) {
     font-size: .9rem;
     color: white;
     padding: .25rem;
+  }
+  .navbar-collapse.show {
+    top: 5.6rem;
   }
 
   .line {
