@@ -1014,6 +1014,23 @@ hr:not([size]) {
     font-size: 1.5rem;
     background: none;
 }
+.bg-orange{
+  background-color: #eb822b;
+}
+.image-con{
+  position: relative;
+  padding-top: 100%;
+  width:100%;
+}
+.image-con img{
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  object-fit: cover;
+  height: 100%;
+}
 
 @media (max-width: 1199.98px) {}
 
