@@ -37,9 +37,8 @@ a:hover {
 }
 
 a {
-  color: #00703c;
+  color: #282829;
   text-decoration: none;
-  font-family: 'MontBold';
 }
 
 .font-light {
@@ -812,15 +811,35 @@ hr:not([size]) {
   height: 10px;
   width: 10px;
 }
+
 .carousel-indicators button:focus {
-    outline: 0;
-    outline: 0;
+  outline: 0;
+  outline: 0;
 }
+
 .carousel-control-next:focus, .carousel-control-next:hover, .carousel-control-prev:focus, .carousel-control-prev:hover {
-    background-color: #00703c;
+  background-color: #00703c;
 }
+
 .carousel-control-next-icon, .carousel-control-prev-icon {
-    background: none;
+  background: none;
+}
+
+.doc-image {
+  width: 2rem;
+  height: 2.5rem;
+  background-image: url("../img/Events/Charity Motorcycle Ride/icon-resource_idle.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 1rem;
+}
+
+.resource-link:hover {
+  color: #259f42;
+}
+
+.resource-link:hover .doc-image {
+  background-image: url("../img/Events/Charity Motorcycle Ride/icon-resource_hover.png");
 }
 
 @media (max-width: 1199.98px) {
