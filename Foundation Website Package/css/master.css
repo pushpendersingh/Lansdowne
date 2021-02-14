@@ -407,7 +407,7 @@ footer .social .nav-link.tw:hover, footer .social .nav-link.tw:focus {
 }
 
 .green-overlay {
-  background-color: rgb(0 112 60 / 86%);
+  background-color: rgb(0 112 60 / 75%);
 }
 
 .min-w-auto {
@@ -845,36 +845,115 @@ hr:not([size]) {
 .resource-link:hover .doc-image {
   background-image: url("../img/Events/Charity Motorcycle Ride/icon-resource_hover.png");
 }
-.h6{
+
+.h6 {
   font-family: "MontBold";
-  margin-bottom:.15rem;
+  margin-bottom: .15rem;
 }
-.green-link{
+
+.green-link {
   text-decoration: underline;
-  color:#00703c;
+  color: #00703c;
 }
-.vert-border{
+
+.vert-border {
   border-left: 2px solid #282829;
   padding-left: 2rem;
 }
+
 /* 16:9 */
 .carousel-inner {
-    padding-top: 56.25%;
+  padding-top: 56.25%;
 }
+
 .carousel-item {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
-.carousel-item img{
+
+.carousel-item img {
   object-fit: cover;
   height: 100%;
 }
-@media (max-width: 1199.98px) {
 
+.banner-text {
+  font-family: 'MontMedium';
+  line-height: 1.5
 }
+
+.img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  margin: 0;
+  text-shadow: 0px 0px 16px rgb(46 46 46);
+  font-family: "MontReg";
+  line-height: 1.5;
+  flex-direction: column;
+}
+.img-overlay span{
+  font-family: "MontReg";
+  line-height: 1.5;
+  padding-top: .5rem;
+  display: none;
+}
+
+.img-overlay:hover, .img-overlay:focus {
+  color: white;
+}
+.img-overlay:hover span, .img-overlay:focus span{
+  display: block;
+}
+
+
+.light-green-overlay {
+  background-color: rgb(37 159 66 / 75%);
+}
+
+.mint-overlay {
+  background-color: rgb(57 186 156 / 75%);
+}
+
+.yellow-overlay {
+  background-color: rgb(254 196 61 / 75%);
+}
+
+.orange-overlay {
+  background-color: rgb(235 130 43 / 75%);
+}
+
+.btn-light {
+  color: #282829;
+  background-color: #ededed;
+  border-color: #ededed;
+  border-radius: .5rem;
+}
+
+.btn-check:focus+.btn-light, .btn-light:focus {
+  color: #282829;
+  background-color: #ededed;
+  border-color: #ededed;
+  box-shadow: 0 0 0 0.25rem rgb(211 212 213 / 55%);
+}
+
+.btn-light:hover {
+  color: #282829;
+  background-color: #ededed;
+  border-color: #ededed;
+}
+
+@media (max-width: 1199.98px) {}
 
 @media (max-width: 991.98px) {
   .container-fluid {
@@ -882,21 +961,22 @@ hr:not([size]) {
     padding-right: var(--bs-gutter-x, .75rem);
     padding-left: var(--bs-gutter-x, .75rem);
   }
-  .vert-border{
-    border-top:2px solid #282829;
+
+  .vert-border {
+    border-top: 2px solid #282829;
     border-left: 0;
     padding-left: 0rem;
     padding-top: 1.5rem;
+  }
+  .img-overlay{
+    line-height: 1.25;
+    font-size: 1.2rem;
   }
 
   .logo {
     text-align: center;
     width: 100%;
     max-width: 20rem;
-  }
-
-  .banner-text {
-    font-size: 1rem;
   }
 
   .banner .donate-now {
@@ -1099,4 +1179,8 @@ hr:not([size]) {
   }
 }
 
-@media (max-width: 575.98px) {}
+@media (max-width: 575.98px) {
+  .banner-text {
+    font-size: 1rem;
+  }
+}
