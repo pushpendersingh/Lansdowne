@@ -293,6 +293,8 @@ body {
   position: absolute;
   right: 3rem;
   line-height: 1.25;
+  font-family: 'MontBold';
+  z-index: 100;
 }
 
 .donate-now:hover {
@@ -752,6 +754,8 @@ hr:not([size]) {
   font-size: 1.25rem;
   line-height: 1.25;
   justify-content: center;
+  font-family: 'MontBold';
+  z-index: 100;
 }
 
 .light-nav .nav-link {
@@ -841,11 +845,35 @@ hr:not([size]) {
 .resource-link:hover .doc-image {
   background-image: url("../img/Events/Charity Motorcycle Ride/icon-resource_hover.png");
 }
-
+.h6{
+  font-family: "MontBold";
+  margin-bottom:.15rem;
+}
+.green-link{
+  text-decoration: underline;
+  color:#00703c;
+}
+.vert-border{
+  border-left: 2px solid #282829;
+  padding-left: 2rem;
+}
+/* 16:9 */
+.carousel-inner {
+    padding-top: 56.25%;
+}
+.carousel-item {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.carousel-item img{
+  object-fit: cover;
+  height: 100%;
+}
 @media (max-width: 1199.98px) {
-  .visit-circle {
-    margin-top: 0;
-  }
+
 }
 
 @media (max-width: 991.98px) {
@@ -853,6 +881,12 @@ hr:not([size]) {
     padding: 0;
     padding-right: var(--bs-gutter-x, .75rem);
     padding-left: var(--bs-gutter-x, .75rem);
+  }
+  .vert-border{
+    border-top:2px solid #282829;
+    border-left: 0;
+    padding-left: 0rem;
+    padding-top: 1.5rem;
   }
 
   .logo {
@@ -914,55 +948,8 @@ hr:not([size]) {
     justify-content: center;
   }
 
-  .faq .accordion-button {
-    font-size: 1.1rem;
-  }
-
-  .carousel-control-next, .carousel-control-prev {
-    display: none;
-  }
-
   .text-center-mobile {
     text-align: center;
-  }
-
-  .needs-circle {
-    width: 14rem;
-    height: 14rem;
-    border-radius: 50%;
-    background-color: #eb822b;
-    text-align: center;
-    padding: .5rem;
-    font-family: "MontMedium";
-    border: 5px solid #fff;
-  }
-
-  .visit-circle {
-    width: 10rem;
-    height: 10rem;
-    border-radius: 50%;
-    border: 4px solid #259f42;
-    text-align: center;
-    color: #259f42;
-    padding: 1rem;
-    font-family: "MontMedium";
-    margin: 1rem;
-  }
-
-  .visit-circle .h1 {
-    font-size: 2rem;
-  }
-
-  .ref-circle {
-    width: 9rem;
-    height: 9rem;
-    border-radius: 50%;
-    background-color: #39ba9c;
-    text-align: center;
-    padding: .5rem;
-    margin: 2rem;
-    margin-left: -2rem;
-    font-family: "MontMedium";
   }
 
   .main-menu .nav-link {
