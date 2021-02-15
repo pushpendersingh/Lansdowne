@@ -83,6 +83,14 @@ body {
   background-color: #00703c;
 }
 
+.bg-blue {
+  background-color: #39ba9c;
+}
+
+.bg-orange{
+  background-color: #eb822b;
+}
+
 .btn {
   color: #323132;
   font-size: 1rem;
@@ -728,6 +736,15 @@ hr:not([size]) {
   border-top-right-radius: calc(.5rem - 1px);
 }
 
+.link-style{
+  color: #6c757d;
+  text-decoration-line: underline;
+}
+
+.banner-height{
+  height: 10rem;
+}
+
 @media (max-width: 1199.98px) {
   .visit-circle {
     margin-top: 0;
@@ -922,6 +939,10 @@ hr:not([size]) {
   .btn-width{
     max-width: 100%;
     text-align-last: center;
+  }
+
+  .banner-height{
+  height: 15rem;
   }
 }
 
