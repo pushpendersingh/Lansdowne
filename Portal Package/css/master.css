@@ -97,3 +97,16 @@ a {
     text-transform: uppercase;
     color: #323132;
 }
+.btn-warning {
+  color: #282829;
+  background-color: #fec43d;
+  border-color: #fec43d;
+  font-family: 'MontMedium';
+  border-radius: .75rem;
+}
+
+.btn-warning:hover {
+  color: #323132;
+  background-color: #fec43d;
+  border-color: #fec43d;
+}
