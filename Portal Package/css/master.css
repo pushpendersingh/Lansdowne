@@ -26,13 +26,12 @@
 body {
   color: #323132;
   font-family: "MontReg";
-  background-color:#ededed;
-  font-size: .9rem;
+  background-color: #ededed;
+  font-size: .8rem;
 }
 
-h1{
+h1 {
   font-family: "MontBold";
-
 }
 
 a {
@@ -41,26 +40,27 @@ a {
   font-family: 'MontBold';
 }
 
-.bg-dark-green{
-	background-color: #00703c;
+.bg-dark-green {
+  background-color: #00703c;
 }
 
-.text-dark-green{
-	color: #00703c;
+.text-dark-green {
+  color: #00703c;
 }
-.logo{
-  width:20rem;
+
+.logo {
+  width: 20rem;
 }
 
 .ext-btn, .ext-btn:hover {
-    background-color: white;
-    color: #00703c;
-    border: 0;
-    width: 10rem;
-    border-radius: 0;
-    height: 3.5rem;
-    font-size: .9rem;
-    font-family: 'MontMedium';
+  background-color: white;
+  color: #00703c;
+  border: 0;
+  width: 10rem;
+  border-radius: 0;
+  height: 3.5rem;
+  font-size: .9rem;
+  font-family: 'MontMedium';
 }
 
 .ext-btn img {
@@ -68,7 +68,8 @@ a {
   padding-left: .1rem;
   padding-bottom: .3rem;
 }
-.btn-grey,.btn-grey:hover,.bg-grey{
+
+.btn-grey, .btn-grey:hover, .bg-grey {
   background-color: #ededed;
 }
 
@@ -83,20 +84,30 @@ a {
 .font-bold {
   font-family: "MontBold";
 }
+
 .font-reg {
   font-family: "MontReg";
 }
-.green-link,.green-link:hover {
+
+.green-link, .green-link:hover {
   text-decoration: underline;
   color: #00703c;
   font-family: "MontReg"
 }
-.form-label {
-    margin-bottom: .25rem;
-    font-family: 'MontBold';
-    text-transform: uppercase;
-    color: #323132;
+
+.light-green-link, .light-green-link:hover {
+  text-decoration: underline;
+  color: #259f42;
+  font-family: "MontReg"
 }
+
+.form-label {
+  margin-bottom: .25rem;
+  font-family: 'MontBold';
+  text-transform: uppercase;
+  color: #323132;
+}
+
 .btn-warning {
   color: #282829;
   background-color: #fec43d;
@@ -109,4 +120,225 @@ a {
   color: #323132;
   background-color: #fec43d;
   border-color: #fec43d;
+}
+
+.btn-xl {
+  color: #00703c;
+  background-color: #fff;
+  min-width: 13rem;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  font-family: 'MontBold';
+  border-radius: .5rem;
+  border: 1px solid #cccccc;
+}
+
+.btn-xl:hover {
+  color: #00703c;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important
+}
+
+.navbar-expand-lg {
+  width: 18rem;
+}
+
+.navbar {
+  align-items: center;
+  justify-content: start;
+}
+
+.bg-black-overlay {
+  background-color: rgb(0 0 0 / 32%);
+}
+
+.menu-icon {
+  width: 1.5rem;
+  margin-right: .4rem;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  font-size: .8rem;
+  font-family: 'MontSemiBold';
+  padding-left: calc(1.5rem - 4px);
+  color: white;
+  border-left: 4px solid transparent;
+}
+
+.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link {
+  color: #fff;
+  border-left: 4px solid #259f42;
+}
+
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+  background: linear-gradient(90deg, rgb(0 0 0 / 41%), transparent);
+  padding-left: 1.5rem;
+  border: 0;
+  border-color: transparent;
+}
+
+.container-fluid {
+  padding: 0 1.5rem;
+}
+
+.person-icon {
+  width: 1rem;
+  margin-right: .5rem;
+}
+
+.person-green-icon {
+  width: 1.5rem;
+  margin-right: .5rem;
+}
+
+.bg-dark {
+  background-color: #dadada !important
+}
+
+.form-control {
+  padding: .5rem .75rem;
+  font-size: .8rem;
+  color: #282829;
+  border: 1px solid #8a8a8a;
+  border-radius: .5rem;
+}
+
+.form-control:focus {
+  color: #282829;
+  background-color: #fff;
+  outline: 0;
+  box-shadow: none;
+  border: 2px solid #00703c;
+}
+
+.rounded-4 {
+  border-radius: .5rem;
+}
+
+.box {
+  padding: 2.5rem;
+}
+
+.title {
+  width: 100%;
+  margin-top: .5rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.navbar-dark .navbar-brand {
+  padding: .5rem .5rem 2rem 4rem;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-expand-lg {
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row !important;
+    align-items: stretch;
+    padding: 0;
+  }
+
+  .navbar-dark .navbar-brand {
+    color: #fff;
+    width: 50%;
+    margin: 0;
+    padding: 1rem 2rem 1rem 4rem;
+  }
+
+  .ext-btn, .ext-btn:hover {
+    background-color: white;
+    color: #00703c;
+    border: 0;
+    background-color: #e4e4e4;
+    width: 100%;
+    border-radius: 0;
+    height: 3rem;
+    font-size: .9rem;
+    font-family: 'MontMedium';
+    border-left: 1.5rem solid #fff;
+    border-right: 1.5rem solid #fff;
+  }
+
+  .title {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  .navbar-dark .navbar-toggler {
+    font-family: 'MontMedium';
+    color: #fff;
+    border-color: transparent;
+    width: 100%;
+    background-color: #00703c;
+    padding: .5rem .75rem;
+    border: 0;
+    border-radius: 0;
+  }
+
+  .navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+  }
+
+  .navbar-toggler span {
+    position: relative;
+  }
+
+  .navbar-toggler span::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f0dd";
+    position: absolute;
+    top: -.1rem;
+    right: -1rem;
+  }
+
+  .navbar-toggler[aria-expanded="true"] span:after {
+    content: "\f0de";
+    top: .3rem;
+  }
+
+  .navbar-toggler[aria-expanded="true"] {
+    border-bottom: 2px solid #282829;
+  }
+
+  .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    width: 100%;
+    padding-right: var(--bs-gutter-x, .75rem);
+    padding-left: var(--bs-gutter-x, .75rem);
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .box {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .btn-xl {
+    min-width: 9rem;
+    font-size: 1.5rem;
+    padding: 1rem 1rem;
+  }
+
+  .navbar-dark .navbar-brand {
+    padding: .5rem .5rem 1rem 2rem;
+  }
+
+  .title {
+    padding: 0 .75rem;
+    font-size: 1.15rem;
+  }
+
+  .ext-btn, .ext-btn:hover {
+    height: 2.5rem;
+    min-width: 10rem;
+  }
 }
