@@ -25,12 +25,14 @@
 
 body {
   color: #323132;
-  font-family: "MontReg"
+  font-family: "MontReg";
+  background-color:#ededed;
+  font-size: .9rem;
 }
 
 h1{
   font-family: "MontBold";
-  
+
 }
 
 a {
@@ -45,23 +47,33 @@ a {
 
 .text-dark-green{
 	color: #00703c;
-	font-family: "MontMedium";
+}
+.logo{
+  width:20rem;
 }
 
-.btn-bg{
-	background-color: white;
+.ext-btn, .ext-btn:hover {
+    background-color: white;
+    color: #00703c;
+    border: 0;
+    width: 10rem;
+    border-radius: 0;
+    height: 3.5rem;
+    font-size: .9rem;
+    font-family: 'MontMedium';
 }
 
-.btn-bg-yellow{
-	background-color: #fec43d;
+.ext-btn img {
+  width: 1.5rem;
+  padding-left: .1rem;
+  padding-bottom: .3rem;
+}
+.btn-grey,.btn-grey:hover,.bg-grey{
+  background-color: #ededed;
 }
 
-.img-icon{
-	height: 1.3rem;
-}
-
-.font-size{
-	font-size: 0.90rem;
+.font-medium {
+  font-family: "MontMedium";
 }
 
 .font-semi-bold {
@@ -70,4 +82,18 @@ a {
 
 .font-bold {
   font-family: "MontBold";
+}
+.font-reg {
+  font-family: "MontReg";
+}
+.green-link,.green-link:hover {
+  text-decoration: underline;
+  color: #00703c;
+  font-family: "MontReg"
+}
+.form-label {
+    margin-bottom: .25rem;
+    font-family: 'MontBold';
+    text-transform: uppercase;
+    color: #323132;
 }
