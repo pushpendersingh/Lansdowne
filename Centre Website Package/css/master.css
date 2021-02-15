@@ -337,6 +337,11 @@ body {
   background-color: #282829;
 }
 
+.select-width{
+  text-align-last: center;
+  max-width: 20%;
+}
+
 footer .social .nav-link {
   width: 2rem;
   height: 2rem;
@@ -912,6 +917,11 @@ hr:not([size]) {
   .bg-error-img {
     background-size: cover;
     background-image: url("../img/13. 404 Error/404-background-image_mobile.jpg");
+  }
+
+  .btn-width{
+    max-width: 100%;
+    text-align-last: center;
   }
 }
 
