@@ -34,10 +34,13 @@ h1 {
   font-family: "MontBold";
 }
 
+a:hover {
+    color: #00703c;
+}
 a {
-  color: #00703c;
-  text-decoration: none;
-  font-family: 'MontBold';
+    color: #323132;
+    text-decoration: none;
+    font-family: 'MontReg';
 }
 
 .bg-dark-green {
@@ -145,6 +148,7 @@ a {
 .navbar {
   align-items: center;
   justify-content: start;
+  min-height: 100vh;
 }
 
 .bg-black-overlay {
@@ -236,6 +240,7 @@ a {
     flex-direction: row !important;
     align-items: stretch;
     padding: 0;
+    min-height: auto;
   }
 
   .navbar-dark .navbar-brand {
@@ -249,8 +254,8 @@ a {
     background-color: white;
     color: #00703c;
     border: 0;
-    background-color: #e4e4e4;
-    width: 100%;
+    background-color: #fff;
+    width: 11rem;
     border-radius: 0;
     height: 3rem;
     font-size: .9rem;
@@ -258,6 +263,12 @@ a {
     border-left: 1.5rem solid #fff;
     border-right: 1.5rem solid #fff;
   }
+  .btn-grey, .btn-grey:hover, .bg-grey {
+    background-color: #ededed;
+  }
+  .navbar .ext-btn, .ext-btn:hover {
+        width: 100%;
+    }
 
   .title {
     width: 50%;
@@ -339,6 +350,9 @@ a {
 
   .ext-btn, .ext-btn:hover {
     height: 2.5rem;
-    min-width: 10rem;
+    width: 10rem;
+  }
+  .btn-grey, .btn-grey:hover, .bg-grey {
+    background-color: #ededed;
   }
 }
