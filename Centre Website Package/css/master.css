@@ -536,6 +536,10 @@ footer .loc .nav-link {
   color: #323132 !important;
 }
 
+.text-light-green{
+   color: #259f42;
+}
+
 .bg-light {
   background-color: #ececec !important;
 }
