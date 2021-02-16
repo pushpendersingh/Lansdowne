@@ -232,6 +232,80 @@ a {
 .navbar-dark .navbar-brand {
   padding: .5rem .5rem 2rem 4rem;
 }
+.accordion-button {
+    width: auto;
+    font-family: 'MontBold';
+    padding: 0rem;
+    padding-top: 1rem;
+    font-size: .8rem;
+    color: #00703c;
+    background-color: transparent;
+    border: 0px;
+    border-radius: 0;
+}
+.accordion-button:focus {
+    z-index: 3;
+    border-color: transparent;
+    outline: 0;
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #00703c;
+    background-color: transparent;
+}
+.accordion-button::before {
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 1.25rem;
+  margin-left: auto;
+  content: "";
+  background-image: url("../img/1 - Global Elements/icon_hidden.png");
+  background-repeat: no-repeat;
+  background-size: 1.25rem;
+  background-size: contain;
+  transition: transform .2s ease-in-out;
+  background-position: center;
+  margin-right: .5rem;
+}
+.accordion-button:not(.collapsed)::before {
+  background-image: url("../img/1 - Global Elements/icon_visible.png");
+}
+.accordion-button::after {
+    flex-shrink: 0;
+    width: 0;
+    height: 0;
+    background-image: none;
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: none;
+    transform: none;
+}
+.form-check-input {
+    border: 1px solid #282829;
+}
+.form-check-input:checked[type=radio] {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%2300703c'/%3e%3c/svg%3e");
+    color: #00703c;
+}
+.form-check-input:focus {
+    border-color: transparent;
+    outline: 0;
+    box-shadow: none;
+}
+.form-check-input:checked[type=checkbox] {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%2300703c' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
+}
+
+.form-check-input:checked {
+    background-color: #fff;
+    border-color: #00703c;
+}
+.accordion-item:last-of-type .accordion-collapse {
+    border-bottom-width: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
 
 @media (max-width: 991.98px) {
   .navbar-expand-lg {
