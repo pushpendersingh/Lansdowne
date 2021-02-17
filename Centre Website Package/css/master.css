@@ -782,8 +782,11 @@ hr:not([size]) {
 @media (max-width: 991.98px) {
   .container-fluid {
     padding: 0;
-    padding-right: var(--bs-gutter-x, .75rem);
-    padding-left: var(--bs-gutter-x, .75rem);
+    padding-right: var(--bs-gutter-x, 1rem);
+    padding-left: var(--bs-gutter-x, 1rem);
+  }
+  .no-border-mobile{
+    border:0!important;
   }
 
   .faq .accordion-button {
