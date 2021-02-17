@@ -1,65 +1,179 @@
-body{
-	font-family: 'Montserrat';
-	height: 100%;
+@font-face {
+  font-family: MontReg;
+  src: url("../fonts/Montserrat-Regular.ttf");
 }
 
-.bg-green{
-	background-color: #259f42;	
+@font-face {
+  font-family: MontBold;
+  src: url("../fonts/Montserrat-Bold.ttf");
 }
 
-.bg-dark-green{
-	background-color: #00703c;
-	padding-left: 75px;
-	padding-right: 10px;
+@font-face {
+  font-family: MontSemiBold;
+  src: url("../fonts/Montserrat-SemiBold.ttf");
 }
 
-.btn-bg-yellow{
-    background-color: #fec43d;
-    position: absolute;
-    transform: translateX(120%) translateY(-50%);
+@font-face {
+  font-family: MontMedium;
+  src: url("../fonts/Montserrat-Medium.ttf");
 }
 
-.arrow{
-	height: 50px;	
+@font-face {
+  font-family: MontLight;
+  src: url("../fonts/Montserrat-Light.ttf");
 }
 
-.image-box{
-	position: relative;
-	float: left;
+body {
+  color: #323132;
+  font-family: "MontReg";
+  font-size: .8rem;
 }
 
-.image-box .hover-img{
-	position: absolute;
-	left: 0;
-	top: 0;
-	display: none;
+.font-medium {
+  font-family: "MontMedium";
 }
 
-.image-box:hover .hover-img{
-	display: block;
-	
+.font-semi-bold {
+  font-family: "MontSemiBold";
 }
 
-.lansdowne-img{
-	height: 110px;
+.font-bold {
+  font-family: "MontBold";
 }
 
-.lansdowne-img-foundation{
-	height: 105px;
+.font-reg {
+  font-family: "MontReg";
 }
 
-.div-spacing{
-	padding-top: 35px;
-	padding-left: 75px;
-	padding-right: 75px;
+.btn-warning {
+  color: #282829;
+  background-color: #fec43d;
+  border-color: #fec43d;
+  font-family: 'MontBold';
+  border-radius: 0;
+  width: 9rem;
 }
 
-.bg-footer{
-	background-color: #282829;
+.btn-warning:hover {
+  color: #323132;
+  background-color: #fec43d;
+  border-color: #fec43d;
 }
 
-@media (max-width: 767.98px){
-	.product{
-		visibility: hidden;
-	}
+.bg-green {
+  background-color: #259f42;
+}
+
+.bg-dark-green {
+  background-color: #00703c;
+  padding-left: 75px;
+  padding-right: 10px;
+}
+
+.btn-bg-yellow {
+  background-color: #fec43d;
+  position: absolute;
+  transform: translateX(120%) translateY(-50%);
+}
+
+.arrow {
+  height: 3.5rem;
+  width: 3.5rem;
+  background-image: url("../Images/dark-green-arrow.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+}
+
+.arrow:hover {
+  background-image: url("../Images/dark-green-arrow_hover.png");
+}
+
+.logo {
+  width: 50%;
+}
+
+.div-spacing {
+  padding-top: 35px;
+  padding-left: 75px;
+  padding-right: 75px;
+}
+
+.bg-footer {
+  background-color: #282829;
+}
+
+.website {
+  height: 57vh;
+}
+
+.feature {
+  height: 40vh;
+}
+
+.feature-img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.feature-hidden .feature-row {
+  display: none;
+}
+
+.feature-hidden .website {
+  height: 97vh;
+}
+
+@media (max-width: 991.98px) {
+  footer {
+    position: inherit;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .website {
+    height: 50vh;
+  }
+
+  .website .w-75,.feature .w-75  {
+    width: 85% !important;
+  }
+
+  .feature {
+    height: auto;
+    display: block;
+  }
+
+  .arrow {
+    height: 3rem;
+    width: 3rem;
+  }
+
+  .feature-mobile {
+    height: auto;
+    display: block;
+  }
+
+  .feature-content {
+    position: unset !important;
+    display: block;
+    transform: none !important;
+    padding: 2rem 0;
+    margin: 0 auto;
+  }
+
+  .feature-hidden .website {
+    height: 50vh;
+  }
 }
