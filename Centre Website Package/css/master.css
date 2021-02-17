@@ -772,6 +772,17 @@ hr:not([size]) {
     border-bottom-right-radius: .25rem;
     border-bottom-left-radius: .25rem;
 }
+.border-grey{
+  border-color:grey;
+}
+.table>:not(:last-child)>:last-child>* {
+    border-bottom-color: #cccccc;
+}
+
+.table>:not(caption)>*>* {
+    padding: 1rem .75rem 1rem 0rem;
+    border-bottom: 2px solid #cccccc;
+}
 
 @media (max-width: 1199.98px) {
   .visit-circle {
