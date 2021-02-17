@@ -104,6 +104,7 @@ body {
   color: #00703c;
   border: 0;
   height: 3.5rem;
+  font-family: 'MontMedium';
 }
 
 .btn-dark-green, .btn-dark-green:hover {
@@ -111,6 +112,7 @@ body {
   color: white;
   border: 0;
   height: 3.5rem;
+  font-family: 'MontMedium';
 }
 
 .btn-dark-green img {
@@ -855,6 +857,11 @@ hr:not([size]) {
 .square-bullets ul li:before {
   content: none;
 }
+.workshop{
+  background-color: #d7f1eb;
+  border-top-left-radius: .5rem;
+  border-bottom-left-radius: .5rem;
+}
 
 @media (max-width: 1199.98px) {
   .visit-circle {
@@ -865,6 +872,13 @@ hr:not([size]) {
 @media (max-width: 991.98px) {
   .my-account {
     height: 10rem;
+  }
+
+  .workshop{
+    background-color: #d7f1eb;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    border-bottom-left-radius: 0;
   }
 
   .container-fluid {
