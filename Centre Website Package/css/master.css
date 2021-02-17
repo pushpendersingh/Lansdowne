@@ -96,7 +96,7 @@ body {
   font-size: 1rem;
   border-radius: 0;
   min-width: 8rem;
-  font-family: "MontMedium"
+  font-family: "MontBold"
 }
 
 .btn-active, .btn-active:hover {
@@ -745,13 +745,14 @@ hr:not([size]) {
   text-decoration-line: underline;
 }
 
-.banner-height {
+.my-account {
   height: 11rem;
 }
 
-.banner-height a {
+.my-account a {
   margin: 0;
-  font-family: "MontSemiBold"
+  font-family: "MontSemiBold";
+  color:#323132 !important
 }
 .invoices .nav-link {
     color: #323132;
@@ -760,8 +761,9 @@ hr:not([size]) {
     text-decoration: underline;
 }
 
-.banner-height a:hover {
-  color: #fff;
+.my-account a:hover {
+  color: #fff!important;
+  text-decoration: underline;
 }
 
 .bg-error-img {
@@ -814,7 +816,7 @@ hr:not([size]) {
 .modal-style{
   max-width: 40rem;
   padding-left: 10px;
-  padding-right: 10px; 
+  padding-right: 10px;
 }
 
 @media (max-width: 1199.98px) {
@@ -824,6 +826,9 @@ hr:not([size]) {
 }
 
 @media (max-width: 991.98px) {
+  .my-account {
+    height: 10rem;
+}
   .container-fluid {
     padding: 0;
     padding-right: var(--bs-gutter-x, 1rem);
@@ -969,6 +974,7 @@ hr:not([size]) {
   .search-img {
     width: 1.5rem;
   }
+
 }
 
 @media (max-width: 767.98px) {
@@ -1016,15 +1022,14 @@ hr:not([size]) {
     max-width: 100%;
     text-align-last: center;
   }
-
-  .banner-height {
-    height: 15rem;
-  }
 }
 
 @media (max-width: 575.98px) {
   .modal-dialog {
     max-width: calc(100vw - 2rem);
     margin: 1.75rem auto;
+  }
+    .my-account {
+      height: 8rem;
   }
 }
