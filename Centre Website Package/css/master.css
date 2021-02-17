@@ -749,6 +749,20 @@ hr:not([size]) {
   height: 10rem;
 }
 
+.bg-error-img {
+  background-size: cover;
+  background-image: url("../img/13. 404 Error/404-background-image_desktop.jpg");
+}
+
+.square-bullets {
+  list-style-type: square;
+  line-height: 2rem;
+}
+.error-text{
+  font-size: calc(4.625rem + 4.5vw);
+  font-family: 'MontBold';
+}
+
 @media (max-width: 1199.98px) {
   .visit-circle {
     margin-top: 0;
@@ -948,16 +962,6 @@ hr:not([size]) {
   .banner-height{
   height: 15rem;
   }
-}
-
-.bg-error-img {
-  background-size: cover;
-  background-image: url("../img/13. 404 Error/404-background-image_desktop.jpg");
-}
-
-.square-bullets {
-  list-style-type: square;
-  line-height: 2rem;
 }
 
 @media (max-width: 575.98px) {}
