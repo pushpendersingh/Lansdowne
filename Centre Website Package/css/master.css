@@ -804,6 +804,19 @@ hr:not([size]) {
   border-bottom: 2px solid #cccccc;
 }
 
+.btn-grey {
+  color: #323132;
+  background-color: #dee2e6;
+  border-color: #dee2e6;
+  font-family: 'MontBold';
+}
+
+.modal-style{
+  max-width: 40rem;
+  padding-left: 10px;
+  padding-right: 10px; 
+}
+
 @media (max-width: 1199.98px) {
   .visit-circle {
     margin-top: 0;
