@@ -752,17 +752,18 @@ hr:not([size]) {
 .my-account a {
   margin: 0;
   font-family: "MontSemiBold";
-  color:#323132 !important
+  color: #323132 !important
 }
+
 .invoices .nav-link {
-    color: #323132;
-    font-family: 'MontMedium';
-    padding: .25rem 0rem;
-    text-decoration: underline;
+  color: #323132;
+  font-family: 'MontMedium';
+  padding: .25rem 0rem;
+  text-decoration: underline;
 }
 
 .my-account a:hover {
-  color: #fff!important;
+  color: #fff !important;
   text-decoration: underline;
 }
 
@@ -813,10 +814,46 @@ hr:not([size]) {
   font-family: 'MontBold';
 }
 
-.modal-style{
+.modal-style {
   max-width: 40rem;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.square-bullets {
+  list-style: none;
+  padding-left: .25rem;
+}
+
+.square-bullets li::before {
+  color: #259f42;
+  display: inline-block;
+  width: 1rem;
+  line-height: 1;
+  font-size: .2rem;
+  margin-left: -1em;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f45c";
+}
+
+.square-bullets li {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.square-bullets ul {
+  list-style-type: '-  ';
+}
+
+.square-bullets ul li {
+  display: list-item;
+  margin-left: 1rem;
+}
+
+.square-bullets ul li:before {
+  content: none;
 }
 
 @media (max-width: 1199.98px) {
@@ -828,7 +865,8 @@ hr:not([size]) {
 @media (max-width: 991.98px) {
   .my-account {
     height: 10rem;
-}
+  }
+
   .container-fluid {
     padding: 0;
     padding-right: var(--bs-gutter-x, 1rem);
@@ -974,7 +1012,6 @@ hr:not([size]) {
   .search-img {
     width: 1.5rem;
   }
-
 }
 
 @media (max-width: 767.98px) {
@@ -1029,7 +1066,8 @@ hr:not([size]) {
     max-width: calc(100vw - 2rem);
     margin: 1.75rem auto;
   }
-    .my-account {
-      height: 8rem;
+
+  .my-account {
+    height: 8rem;
   }
 }
