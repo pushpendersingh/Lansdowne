@@ -214,7 +214,43 @@
                                <input type="text" class="form-control" id="name1" placeholder="Enter your password">
                           </div>
                           <div>
-                          <a class="fst-italic text-light-green fw-normal" href="#">Forgot Password?</a>
+                          <a class="fst-italic text-light-green fw-normal" data-bs-toggle="modal" data-bs-target="#Modal1" href="#">Forgot Password?</a>
+                          <!-- Modal -->
+                          <div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                             <div class="modal-dialog modal-dialog-centered modal-style">
+                               <div class="modal-content border border-1 border-dark rounded-0">
+                                 <div class="modal-body">
+                                       <div class="container-fluid p-0">
+                                        <div class="h3 m font-bold">
+                                          Forgot Password?
+                                        </div>
+                                        <div class="h5">
+                                          Password Reset Request
+                                        </div>
+                                        <div>
+                                          <p class="mt-4 mb-2 ">Enter the email address associated with your account to reset your My Account password</p>
+                                        </div>
+                                             <div class="row">
+                                                <div class="col-md-4 font-bold d-flex align-items-center">EMAIL:</div>
+                                                <div class="col-md-7 ms-auto"><input type="text" class="form-control" id="name1" placeholder="Email@email.com"></div>
+                                              </div>
+                                              <div class="row mt-4 pt-2 mb-3">
+                                               <div class="col-sm-9">
+                                                <div class="row gx-0">
+                                                <div class="col-12 mb-3 mb-lg-0 col-sm-6">
+                                                   <button type="submit" class="btn btn-lg btn-warning font-bold">Reset Password</button>
+                                                 </div>
+                                               <div class="col-4 col-sm-6">
+                                                 <button type="submit" class="btn btn-lg btn-grey font-bold">Cancel</button>
+                                               </div>
+                                             </div>
+                                            </div>
+                                         </div>
+                                       </div>        
+                                 </div>
+                               </div>
+                             </div>
+                           </div>
                           </div>
                           <div class="col-12">
                           <button type="submit" class="btn btn-lg btn-warning font-bold">Submit</button>
