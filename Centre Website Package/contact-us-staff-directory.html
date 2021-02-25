@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
   <link rel="stylesheet" href="css/master.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <script src='https://www.google.com/recaptcha/api.js'></script>
@@ -64,7 +64,7 @@
         <button type="button" class="btn btn-dark-green">Foundation <img src="img\Navigation and Footer\external-link-icon.png" alt=""> </button>
       </div>
       <div class="d-flex align-items-center">
-        <ul class="nav justify-content-center font-size me-5 d-none d-lg-flex">
+        <ul class="nav justify-content-center font-size mr-5 d-none d-lg-flex">
           <li class="nav-item">
             <a class="nav-link" href="#">-</a>
           </li>
@@ -104,12 +104,12 @@
 
   <!--Main Nav -->
   <nav class="navbar navbar-expand-lg navbar-light" role="navigation">
-    <button class="navbar-toggler order-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler order-1" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span>MENU</span>
     </button>
-    <a class="navbar-brand me-0 me-lg-5 d-flex d-lg-none order-3" href="#"> <img src="img\Navigation and Footer\centre-logo.jpg" alt=""> </a>
+    <a class="navbar-brand mr-0 mr-lg-5 d-flex d-lg-none order-3" href="#"> <img src="img\Navigation and Footer\centre-logo.jpg" alt=""> </a>
     <div class="container-fluid align-items-stretch justify-content-center">
-      <a class="navbar-brand me-0 me-lg-5 d-none d-lg-flex" href="#"> <img src="img\Navigation and Footer\centre-logo.jpg" alt=""> </a>
+      <a class="navbar-brand mr-0 mr-lg-5 d-none d-lg-flex" href="#"> <img src="img\Navigation and Footer\centre-logo.jpg" alt=""> </a>
       <ul class="nav nav-fill w-100 main-menu d-none d-lg-flex">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="donate.html">DONATE</a>
@@ -121,7 +121,7 @@
           <a class="nav-link" href="my-account.html">MY ACCOUNT</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><img class="search-img" src="img\Navigation and Footer\search-icon.png" alt="Search"> </a>
+          <a class="nav-link" data-toggle="modal" data-target="#exampleModal" href="#"><img class="search-img" src="img\Navigation and Footer\search-icon.png" alt="Search"> </a>
         </li>
       </ul>
     </div>
@@ -139,12 +139,12 @@
             <a class="nav-link" href="my-account.html">MY ACCOUNT</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><span class="d-flex d-lg-none pe-2">SEARCH</span> <img class="search-img" src="img\Navigation and Footer\search-icon.png" alt="Search"> </a>
+            <a class="nav-link" data-toggle="modal" data-target="#exampleModal" href="#"><span class="d-flex d-lg-none pr-2">SEARCH</span> <img class="search-img" src="img\Navigation and Footer\search-icon.png" alt="Search"> </a>
           </li>
         </ul>
         <ul class="navbar-nav mb-2 mb-lg-0 w-100 nav-fill">
           <li class="nav-item dropdown">
-            <a class="nav-link" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link" href="#" id="aboutDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
               <span class="position-relative">About Us</span>
             </a>
             <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
@@ -209,10 +209,10 @@
   </div>
 
   <!-- section -->
-  <div class="container-fluid">
-    <div class="mb-4 bg-light px-lg-5 py-lg-4 px-4 py-4 mt-4 mt-lg-5">
+  <div class="container-fluid mb-5">
+    <div class="mb-4 bg-light px-lg-5 py-lg-4 px-4 py-4 mt-5">
       <div class="h6 mb-0 font-bold">
-        FILTER BY DEPARTMENT: <select class="ms-lg-3 mt-2 mt-lg-0 form-select d-inline select-width btn-width bg-light rounded-3 border-grey" aria-label="Default select example">
+        FILTER BY DEPARTMENT: <select class="ml-lg-3 mt-2 mt-lg-0 form-select d-inline select-width btn-width bg-light rounded-3 border-grey" aria-label="Default select example">
           <option selected>Show All</option>
           <option value="1">One</option>
           <option value="2">Two</option>
@@ -220,54 +220,52 @@
         </select>
       </div>
     </div>
-
-    <div class="table-responsive mb-4">
+    <div class="table-responsive">
       <table class="table">
-        <thead class="font-bold">
-          <tr>
-            <th class="col">Staff Member</th>
-            <th class="col">Role & Department</th>
-            <th class="col">Contact Information</th>
+        <thead>
+          <tr class="font-bold">
+            <th scope="col">Staff Member</th>
+            <th scope="col">Role & Department</th>
+            <th scope="col">Contact Information</th>
           </tr>
         </thead>
-        <tbody class="">
-          <tr class="py-4">
-            <td class="">Contact Name</td>
-            <td class="">Role & Department</td>
-            <td class="">
+        <tbody>
+          <tr>
+            <td>Contact Name</td>
+            <td>Role & Department</td>
+            <td>
               <div class="d-flex">
                 <a href="#">(519)-753-3153 </a>
                 <span class="mb-0">&nbsp ext. 237</span>
               </div>
-              <a class="d-block" href="#">name@lansdownecc.com</a>
-            </td>
-          </tr>
-          <tr class="my-4">
-            <td class="py-4">Contact Name</td>
-            <td class="py-4">Role & Department</td>
-            <td class="py-4">
-              <div class="d-flex">
-                <a class="d-block" href="#">(519)-753-3153 </a>
-                <p class="mb-0">&nbsp ext. 237</p>
-              </div>
-              <a class="d-block" href="#">name@lansdownecc.com</a>
+              <a href="#">name@lansdownecc.com</a>
             </td>
           </tr>
           <tr>
-            <td class="py-4">Contact Name</td>
-            <td class="py-4">Role & Department</td>
-            <td class="py-4">
+            <td>Contact Name</td>
+            <td>Role & Department</td>
+            <td>
               <div class="d-flex">
-                <a class="d-block" href="#">(519)-753-3153 </a>
-                <p class="mb-0">&nbsp ext. 237</p>
+                <a href="#">(519)-753-3153 </a>
+                <span class="mb-0">&nbsp ext. 237</span>
               </div>
-              <a class="d-block" href="#">name@lansdownecc.com</a>
+              <a href="#">name@lansdownecc.com</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Contact Name</td>
+            <td>Role & Department</td>
+            <td>
+              <div class="d-flex">
+                <a href="#">(519)-753-3153 </a>
+                <span class="mb-0">&nbsp ext. 237</span>
+              </div>
+              <a href="#">name@lansdownecc.com</a>
             </td>
           </tr>
         </tbody>
       </table>
     </div>
-
   </div>
 
   <!-- Footer Divider -->
@@ -376,7 +374,8 @@
   </footer>
 
   <!-- Option 1: Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 </body>
 
 </html>
