@@ -633,6 +633,62 @@ hr:not([size]) {
 .custom-control-input {
   border: 1px solid #282829;
 }
+.custom-checkbox .custom-control-label::before {
+    border-radius: 0;
+}
+
+.custom-control-label::before {
+    top: .2rem;
+    width: .9rem;
+    height: .9rem;
+}
+.custom-control-label::after {
+    position: absolute;
+    top: -.35rem;
+    left: -2.05rem;
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    content: "";
+    background: 50%/50% 50% no-repeat;
+}
+
+.custom-radio .custom-control-label::after {
+    position: absolute;
+    top: -1.65rem;
+    color: #00703c;
+    left: -1.85rem;
+    display: block;
+    width: 1.6rem;
+    height: 1.6rem;
+    content: "";
+    background: 50%/50% 50% no-repeat;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%2300703c' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+  background-color: #fff;
+  border-color: #00703c;
+}
+
+.custom-radio .custom-control-input:checked~.custom-control-label::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%2300703c'/%3e%3c/svg%3e");
+}
+.custom-control-input:not(:disabled):active~.custom-control-label::before {
+    color: #fff;
+    background-color: rgb(0 112 60 / 50%);
+    border-color: rgb(0 112 60 / 50%);
+}
+
+.custom-control-input:focus:not(:checked)~.custom-control-label::before {
+    border-color: #00703c47;
+}
+.custom-control-input:focus~.custom-control-label::before {
+    box-shadow: 0 0 0 0.2rem #00703c47;
+}
 
 .btn-secondary, .btn-secondary:hover {
   background-color: #d1d1d1;
