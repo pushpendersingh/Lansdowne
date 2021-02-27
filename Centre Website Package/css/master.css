@@ -48,15 +48,18 @@ h1, .h1 {
 .h6, h6 {
   font-size: 1rem;
 }
+
 .display-3 {
-    font-size: calc(1.525rem + 3.3vw);
-    line-height: 1.2;
+  font-size: calc(1.525rem + 3.3vw);
+  line-height: 1.2;
 }
+
 .display-2 {
-    font-size: calc(1.575rem + 3.9vw);
-    line-height: 1.2;
+  font-size: calc(1.575rem + 3.9vw);
+  line-height: 1.2;
 }
-.visually-hidden{
+
+.visually-hidden {
   display: none;
 }
 
@@ -563,7 +566,7 @@ footer .loc .nav-link {
   padding-right: .5rem;
   color: #323132;
   font-family: 'MontSemiBold';
-  content: var(--bs-breadcrumb-divider, "/");
+  content: "/";
 }
 
 .breadcrumb-item.active {
@@ -746,14 +749,15 @@ footer .loc .nav-link {
 }
 
 hr {
-    border-top: 2px solid #cccccc;
+  border-top: 2px solid #cccccc;
 }
+
 .g-0 {
   margin-right: 0;
   margin-left: 0;
 
-  > .col,
-  > [class*="col-"] {
+  >.col,
+  >[class*="col-"] {
     padding-right: 0;
     padding-left: 0;
   }
@@ -778,26 +782,27 @@ hr {
   color: red;
 }
 
-.referral .form-select{
+.referral .form-select {
   border-radius: 0;
-    margin-bottom: 1.5rem;
-    width: 100%;
-    padding: 0.5rem 1rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  padding: 0.5rem 1rem;
 }
-
 
 .input-group-text {
   background-color: #fec43d;
   font-family: 'MontBold';
   padding: 0 1.5rem;
 }
+
 .custom-file-label::after {
-    display: none;
+  display: none;
 }
+
 .custom-file-label {
-    border: 1px solid #323132;
-    border-radius: 0;
-    border-left: 0;
+  border: 1px solid #323132;
+  border-radius: 0;
+  border-left: 0;
 }
 
 .faq .accordion-button {
@@ -1004,6 +1009,9 @@ hr {
   border-top-left-radius: .5rem;
   border-bottom-left-radius: .5rem;
 }
+.workshop {
+  margin-top: 1.5rem;
+}
 
 @media (max-width: 1199.98px) {
   .visit-circle {
@@ -1017,6 +1025,18 @@ hr {
   }
 
   .workshop {
+    margin-top: 1.5rem;
+  }
+
+  .text-left-mobile {
+    text-align: left !important;
+  }
+
+  .navbar-expand-lg .navbar-collapse {
+    border: 0 !important;
+  }
+
+  .workshop {
     background-color: #d7f1eb;
     border-top-left-radius: .5rem;
     border-top-right-radius: .5rem;
@@ -1025,8 +1045,8 @@ hr {
 
   .container-fluid {
     padding: 0;
-    padding-right: var(--bs-gutter-x, 1rem);
-    padding-left: var(--bs-gutter-x, 1rem);
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
 
   .no-border-mobile {
@@ -1144,7 +1164,7 @@ hr {
     right: 0;
     background-color: #00703c;
     padding: .25rem;
-    margin: 0 var(--bs-gutter-x, -.75rem);
+    margin: 0;
   }
 
   .dropdown-item {
