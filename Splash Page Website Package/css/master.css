@@ -52,6 +52,9 @@ body {
   font-family: 'MontBold';
   border-radius: 0;
   width: 9rem;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .btn-warning:hover {
@@ -133,6 +136,13 @@ footer {
   height: 97vh;
 }
 
+.align-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 @media (max-width: 991.98px) {
   footer {
     position: inherit;
@@ -146,7 +156,7 @@ footer {
     height: 50vh;
   }
 
-  .website .w-75,.feature .w-75  {
+  .website .w-75, .feature .w-75 {
     width: 85% !important;
   }
 

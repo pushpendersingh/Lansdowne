@@ -30,8 +30,43 @@ body {
   font-size: .8rem;
 }
 
-h1 {
+h1, .h1 {
   font-family: "MontBold";
+  font-size: calc(1.375rem + 1.5vw);
+}
+
+.h2, h2 {
+  font-size: calc(1.325rem + .9vw);
+}
+
+.h3, h3 {
+  font-size: calc(1.3rem + .6vw);
+}
+
+.h4, h4 {
+  font-size: calc(1.275rem + .3vw);
+}
+
+.h5, h5 {
+  font-size: 1.25rem;
+}
+
+.h6, h6 {
+  font-size: 1rem;
+}
+
+.display-3 {
+  font-size: calc(1.525rem + 3.3vw);
+  line-height: 1.2;
+}
+
+.display-2 {
+  font-size: calc(1.575rem + 3.9vw);
+  line-height: 1.2;
+}
+
+.visually-hidden {
+  display: none;
 }
 
 a:hover {
@@ -149,6 +184,7 @@ a {
   align-items: center;
   justify-content: start;
   min-height: 100vh;
+  padding: 0;
 }
 
 .bg-black-overlay {
@@ -204,6 +240,7 @@ a {
   color: #282829;
   border: 1px solid #8a8a8a;
   border-radius: .5rem;
+  margin-bottom: 1.5rem;
 }
 
 .form-control:focus {
@@ -242,6 +279,7 @@ a {
     background-color: transparent;
     border: 0px;
     border-radius: 0;
+    display: inline-flex;
 }
 .accordion-button:focus {
     z-index: 3;
@@ -253,6 +291,7 @@ a {
 .accordion-button:not(.collapsed) {
     color: #00703c;
     background-color: transparent;
+    padding: 0;
 }
 .accordion-button::before {
   flex-shrink: 0;
@@ -267,6 +306,7 @@ a {
   transition: transform .2s ease-in-out;
   background-position: center;
   margin-right: .5rem;
+
 }
 .accordion-button:not(.collapsed)::before {
   background-image: url("../img/1 - Global Elements/icon_visible.png");
@@ -281,30 +321,70 @@ a {
     background-image: none;
     transform: none;
 }
-.form-check-input {
-    border: 1px solid #282829;
-}
-.form-check-input:checked[type=radio] {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%2300703c'/%3e%3c/svg%3e");
-    color: #00703c;
-}
-.form-check-input:focus {
-    border-color: transparent;
-    outline: 0;
-    box-shadow: none;
-}
-.form-check-input:checked[type=checkbox] {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%2300703c' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
+.custom-checkbox .custom-control-label::before {
+    border-radius: 0;
 }
 
-.form-check-input:checked {
-    background-color: #fff;
-    border-color: #00703c;
+.custom-control-label::before {
+    top: .2rem;
+    width: .9rem;
+    height: .9rem;
 }
+.custom-control-label::after {
+    position: absolute;
+    top: -.35rem;
+    left: -2.05rem;
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    content: "";
+    background: 50%/50% 50% no-repeat;
+}
+
+.custom-radio .custom-control-label::after {
+    position: absolute;
+    top: -1.65rem;
+    color: #00703c;
+    left: -1.85rem;
+    display: block;
+    width: 1.6rem;
+    height: 1.6rem;
+    content: "";
+    background: 50%/50% 50% no-repeat;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%2300703c' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+  background-color: #fff;
+  border-color: #00703c;
+}
+
+.custom-radio .custom-control-input:checked~.custom-control-label::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%2300703c'/%3e%3c/svg%3e");
+}
+.custom-control-input:not(:disabled):active~.custom-control-label::before {
+    color: #fff;
+    background-color: rgb(0 112 60 / 50%);
+    border-color: rgb(0 112 60 / 50%);
+}
+
+.custom-control-input:focus:not(:checked)~.custom-control-label::before {
+    border-color: #00703c47;
+}
+.custom-control-input:focus~.custom-control-label::before {
+    box-shadow: 0 0 0 0.2rem #00703c47;
+}
+
 .accordion-item:last-of-type .accordion-collapse {
     border-bottom-width: 0;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
+}
+.navbar-expand-lg .navbar-collapse {
+    width: 100%;
 }
 
 @media (max-width: 991.98px) {
@@ -393,8 +473,8 @@ a {
 
   .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
     width: 100%;
-    padding-right: .75rem;
-    padding-left: .75rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
     margin-right: auto;
     margin-left: auto;
   }
