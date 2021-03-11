@@ -343,7 +343,7 @@ a {
 
 .custom-radio .custom-control-label::after {
     position: absolute;
-    top: -1.65rem;
+    top: -.15rem;
     color: #00703c;
     left: -1.85rem;
     display: block;
